@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Art Gallery</title>
+    <link rel="stylesheet" href="/home.css"> <!-- Link to your existing CSS file -->
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="brand-logo-container">
+            <img src="./brandlogo.jpeg" alt="Brand Logo" class="brand-logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="/home.html" class="nav-link">Home</a></li>
+            <li><a href="/profile.html" class="nav-link">Profile</a></li>
+            <li><a href="/about.html" class="nav-link">About Us</a></li>
+            <li><a href="#" class="nav-link" id="logoutBtn">Logout</a></li>
+        </ul>
+        <div class="profile-image-container">
+            <img src="./profile.jpeg" alt="Profile Image" class="profile-image1">
+        </div>
+    </nav>
+
+    <div class="profile-container">
+        <h1>Your Profile</h1>
+        
+        <div class="profile-info">
+            <div class="profile-details">
+                <h2>Personal Information</h2>
+                <p><strong>Name:</strong> John Doe</p>
+                <p><strong>Email:</strong> johndoe@example.com</p>
+                <p><strong>Phone:</strong> +1 (234) 567-890</p>
+            </div>
+
+            <div class="profile-image-container">
+                <img src="./profile.jpeg" alt="Profile Image" class="profile-image1">
+            </div>
+        </div>
+
+        <div class="profile-actions">
+            <button onclick="editProfile()">Edit Profile</button>
+        </div>
+
+        <h2>Your Artworks</h2>
+        <div class="artworks">
+            <div class="artwork">
+                <img src="./artwork1.jpeg" alt="Artwork 1">
+                <p>Artwork Title 1</p>
+            </div>
+            <div class="artwork">
+                <img src="./artwork2.jpeg" alt="Artwork 2">
+                <p>Artwork Title 2</p>
+            </div>
+            <div class="artwork">
+                <img src="./artwork3.jpeg" alt="Artwork 3">
+                <p>Artwork Title 3</p>
+            </div>
+            <div class="artwork">
+                <img src="./artwork4.jpeg" alt="Artwork 4">
+                <p>Artwork Title 4</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Art Gallery. All rights reserved. | Follow us on 
+            <a href="#">Facebook</a>, 
+            <a href="#">Instagram</a>, and 
+            <a href="#">Twitter</a>.
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById('logoutBtn').onclick = function() {
+            window.location.href = '/logout'; // Redirect to the logout route
+        };
+
+        function editProfile() {
+            // Function to handle profile editing
+            alert("Edit profile functionality will be implemented.");
+        }
+
+        const currentPath = window.location.pathname;
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            if (link.getAttribute('href') === currentPath) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>
