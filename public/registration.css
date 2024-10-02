@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -100,6 +106,7 @@ body {
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Center using transform */
     z-index: 1;
+    /* text-align: center; */
 }
 
 /* Responsive design for smaller screens */
@@ -156,4 +163,19 @@ button {
 
 button:hover {
     background-color: #4cae4c;
+}
+
+.login-link {
+    margin-top: 15px; /* Space between the form and the link */
+    text-align: center;
+}
+
+.link-text {
+    color: #007BFF; /* Change to your desired link color */
+    text-decoration: none; /* Remove underline from the link */
+    font-weight: bold; /* Make the link text bold */
+}
+
+.link-text:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
 }

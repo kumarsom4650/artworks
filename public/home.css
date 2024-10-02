@@ -1,3 +1,10 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
 .nav-bar {
     background-color: #333;
     padding: 1rem;
@@ -82,7 +89,7 @@
     align-items: center;
     background: linear-gradient(135deg, #ff7e5f, #feb47b, #86a8e7, #91eae4); /* Gradient background */
     background-size: 400% 400%; /* Make the gradient animated */
-    animation: gradientBG 8s ease infinite; /* Animate the gradient */
+    animation: gradientBG 4s ease infinite; /* Animate the gradient */
     padding: 15px; /* Inner spacing */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
@@ -176,6 +183,9 @@ footer {
     color: white; /* Text color */
     text-align: center; /* Centered text */
     padding: 10px; /* Padding for the footer */
+    position: relative; /* Ensure the footer stays relative to the body */
+    bottom: 0px; /* Stick to the bottom */
+    width: 100%; /* Full width */
 }
 
 footer a {
@@ -188,87 +198,50 @@ footer a:hover {
     text-decoration: underline; /* Underline on hover */
 }
 
+main {
+    flex: 1; /* This ensures that the main content takes up the remaining space */
+}
 
 .profile-container {
-    margin: 20px; /* Space around the container */
-    padding: 20px; /* Inner spacing */
-    background-color: rgba(255, 255, 255, 0.9); /* Light background with transparency */
-    border-radius: 10px; /* Rounded corners */
-    color: #333; /* Dark text color */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for profile */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
 }
 
 .profile-info {
-    display: flex; /* Flex layout for profile info */
-    justify-content: space-between; /* Space between items */
-    align-items: center; /* Center alignment */
+    display: flex;
+    align-items: center; /* Align items vertically centered */
 }
 
-.profile-details {
-    flex: 1; /* Make the details section take available space */
+.profile-image-large {
+    width: 100px; /* Set a fixed width */
+    height: 100px; /* Set a fixed height */
+    border-radius: 50%; /* Make it circular */
+    margin-right: 20px; /* Space between image and text */
 }
 
-.profile-image-container {
-    flex: 0 0 150px; /* Fixed width for the profile image */
+.profile-details h2 {
+    margin: 0; /* Remove default margin */
+    color: #333; /* Text color */
 }
 
-.profile-image1 {
-    width: 100%; /* Full width of the container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 50%; /* Circular profile image */
-    border: 2px solid #f39c12; /* Border color */
+.profile-details p {
+    margin: 5px 0; /* Margin for paragraphs */
+    color: #666; /* Lighter color for description */
 }
 
-.artworks {
-    display: flex; /* Flex layout for artworks */
-    flex-wrap: wrap; /* Wrap artworks to new lines if needed */
-    gap: 10px; /* Space between artworks */
-}
-
-.artwork {
-    flex: 1 0 calc(25% - 10px); /* 4 items per row with gap */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for artworks */
-    border-radius: 10px; /* Rounded corners for artworks */
-    overflow: hidden; /* Prevent overflow */
-}
-
-.artwork img {
-    width: 100%; /* Full width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded corners for artwork images */
-}
-
-.profile-actions {
-    margin-top: 20px; /* Space above actions */
-}
-
-.profile-actions button {
-    padding: 10px 20px; /* Button padding */
+.profile-details button {
+    padding: 10px 20px; /* Padding for button */
     background-color: #f39c12; /* Button color */
-    color: white; /* Button text color */
+    color: #fff; /* Text color */
     border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners for button */
+    border-radius: 5px; /* Rounded corners */
     cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s; /* Smooth background color transition */
+    transition: background-color 0.3s ease; /* Smooth transition */
 }
 
-.profile-actions button:hover {
-    background-color: #d78d0e; /* Darker shade on hover */
-}
-
-footer {
-    background-color: #333; /* Black background */
-    color: white; /* Text color */
-    text-align: center; /* Centered text */
-    padding: 10px; /* Padding for the footer */
-}
-
-footer a {
-    color: #f39c12; /* Link color */
-    text-decoration: none; /* Remove underline from links */
-    transition: color 0.3s; /* Smooth transition for hover effect */
-}
-
-footer a:hover {
-    text-decoration: underline; /* Underline on hover */
+.profile-details button:hover {
+    background-color: #e67e22; /* Darken color on hover */
 }
