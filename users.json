@@ -1,20 +1,14 @@
 [
   {
-    "name": "asdf",
-    "email": "asdf@gmail.com",
-    "password": "$2b$10$8nEVmBJ8zb4tJyrYVS1xM.UWVKmx5JllmVdy0AgyXpKdBsj.J.0zW",
-    "contact": "4561378940"
-  },
-  {
     "name": "sompandey",
     "email": "som@gmail.com",
     "password": "$2b$10$tDC7JVm9B/PVsmAYfDBS9eUUCHMt/F1N3iSw/SneeQp0QxNFaDOp6",
     "contact": "1234567890"
   },
   {
-    "name": "sompandey",
-    "email": "som123@gmail.com",
-    "password": "$2b$10$h39DH..7bn6Y0H7hTO42Q.IajWVvuC5AtMC6Crxi5r3X8nAQ2Sc96",
+    "name": "radhe radhe",
+    "email": "radhe@gmail.com",
+    "password": "$2b$10$IFj7uJftXUju4WN/V.SAo.pUAXQXlL7u8P6SH/bLXZGrXG88CyJva",
     "contact": "1234567890"
   }
 ]
